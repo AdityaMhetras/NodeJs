@@ -1,7 +1,8 @@
-const add = require('./utils.js')
-
+const chalk = require('chalk')
 const getNotes = require('./notes.js')
 
-console.log(add(5,8));
-
 console.log(getNotes());
+console.log(chalk.blue.bold.inverse('SUCCESS!'));
+
+
+
