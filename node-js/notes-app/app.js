@@ -12,7 +12,8 @@ yargs.command({
     builder: {
         title: {
             describe: 'Notes title',
-            demandOption: true
+            demandOption: true,
+            type: 'string'
         }
     },
     handler: function () {
