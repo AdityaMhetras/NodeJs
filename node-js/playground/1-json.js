@@ -1,11 +1,10 @@
+const fs = require('fs')
+
 const book = {
-    title: '',
+    title: 'Ego is the enemy',
     author: 'Ryan Holiday'
 }
 // convert object to JSON
 const bookJSON = JSON.stringify(book)
-console.log(bookJSON)
+fs.writeFileSync('1-json.json', bookJSON)
 
-// convert JSON to Object
-const parsedData = JSON.parse(bookJSON)
-console.log(parsedData.author);
